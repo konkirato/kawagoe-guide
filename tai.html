@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การแปลงจากเยนเป็นบาทไทย</title>
+    <link rel="stylesheet" href="money.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>การแปลงจากเยนเป็นบาทไทย</h1>
+        
+        <label for="exchangeRate">อัตราแลกเปลี่ยน (1 JPY = THB): </label>
+        <input type="number" id="exchangeRate" placeholder="กรอกอัตราแลกเปลี่ยน" step="0.001">
+        
+        <label for="yen">เยนญี่ปุ่น (JPY): </label>
+        <input type="number" id="yen" placeholder="กรอกจำนวนเยน">
+        
+        <button onclick="convertToUSD()">แปลงค่า</button>
+        <p id="result"></p>
+
+        <button class="bottom-button" onclick="location.href='Thai.html'">ปุ่มเล่นเสียง</button>
+    </div>
+
+    <script src="tai.js"></script> 
+</body>
+</html>

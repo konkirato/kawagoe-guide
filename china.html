@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">音声再生ボタン(china)</h1>
+</header>
+<br>
+<audio id="Audio1">
+  <source src="この商品をください.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<audio id="Audio2">
+  <source src="お手洗いの場所を教えてください.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<audio id="Audio3">
+  <source src="現金で支払います.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<audio id="Audio4">
+  <source src="カードで払います.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<audio id="Audio5">
+  <source src="もう少しゆっくりお願いします.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<audio id="Audio6">
+  <source src="どれくらい待ちますか.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<audio id="Audio7">
+  <source src="どこにありますか.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<audio id="Audio8">
+  <source src="これはいくらですか.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<audio id="Audio9">
+  <source src="これはなんですか？.mp3" type="audio/mpeg">
+  お使いのブラウザはオーディオタグをサポートしていません。
+</audio>
+<main class="main-content">
+  <div class="button-container">
+    <button class="btn" onclick="playAudio('Audio1')">把这个给我</button>
+    <button class="btn" onclick="playAudio('Audio2')">厕所在哪里？</button>
+    <button class="btn" onclick="playAudio('Audio3')">现金支付。</button>
+    <button class="btn" onclick="playAudio('Audio4')">用卡支付。</button>
+    <button class="btn" onclick="playAudio('Audio5')">请慢一点</button>
+    <button class="btn" onclick="playAudio('Audio6')">你想等多久？</button>
+    <button class="btn" onclick="playAudio('Audio7')">它位于何处？</button>
+    <button class="btn" onclick="playAudio('Audio8')">这是多少钱？</button>
+    <button class="btn" onclick="playAudio('Audio9')">这是什么？</button>
+  </div>
+</main>
+<script>
+  function playAudio(audioid) {
+      var audio = document.getElementById(audioid);
+      audio.play();
+  }
+</script>
+<br>
+<br>
+<br>
+
+<footer>その他の機能
+  <div>
+    <button class="btn-f" onclick="location.href='index.html'">返回上一页</button>
+    <button class="btn-f" onclick="location.href='chinese.html'">货币兑换(中)</button>
+    <br>
+    <br>
+    <button class="btn-f" onclick="location.href='taiwan.html'">货币兑换(台)</button>
+  </div>
+</footer>
+</body>
+</html>

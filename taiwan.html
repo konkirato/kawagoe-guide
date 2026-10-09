@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日元兑换新台币</title>
+    <link rel="stylesheet" href="money.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>日元兑换新台币</h1>
+        
+        <label for="exchangeRate">汇率 (1 JPY = TWD): </label>
+        <input type="number" id="exchangeRate" placeholder="输入汇率" step="0.001">
+        
+        <label for="yen">日元 (JPY): </label>
+        <input type="number" id="yen" placeholder="输入日元">
+        
+        <button onclick="convertToUSD()">转换</button>
+        <p id="result"></p>
+        
+        <button class="bottom-button" onclick="location.href='china.html'">音频播放按钮</button>
+    </div>
+
+    <script src="taiwan.js"></script> 
+</body>
+</html>

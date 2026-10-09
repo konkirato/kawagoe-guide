@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion from yen to dollars</title>
+    <link rel="stylesheet" href="money.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>conversion from yen to dollars</h1>
+        
+        <label for="exchangeRate">exchange rate (1 USD = JPY): </label>
+        <input type="number" id="exchangeRate" placeholder="Enter the exchange rate" step="0.01">
+        
+        <label for="yen">Japanese yen (JPY): </label>
+        <input type="number" id="yen" placeholder="Enter the amount in yen">
+        
+        <button onclick="convertToUSD()">calculate the conversion</button>
+        <p id="result"></p>
+
+        <button class="bottom-button" onclick="location.href='english.html'">Audio Playback Button</button>
+    </div>
+
+    <script src="usa.js"></script> 
+</body>
+</html>
